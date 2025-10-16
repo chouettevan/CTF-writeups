@@ -42,7 +42,6 @@ using radare2, we can see the main challenge binary has the follwing functions:
 0x004010c0    1     15 fcn.004010c0
 0x004010d0    1     15 fcn.004010d0
 ```
-```
 
 Carefully reading main reveals that it is possible to ovewrite a FILE struct:
 ```
