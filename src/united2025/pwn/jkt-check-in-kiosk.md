@@ -42,8 +42,15 @@ using radare2, we can see the main challenge binary has the follwing functions:
 0x004010c0    1     15 fcn.004010c0
 0x004010d0    1     15 fcn.004010d0
 ```
-looking at main and reading the graph view of the assembly
+```{css, echo=FALSE}
+.scroll-100 {
+  max-height: 100px;
+  overflow-y: auto;
+  background-color: inherit;
+}
 ```
+looking at main and reading the graph view of the assembly
+```{class.output="scroll-100"}
                                                                                                                                                                                                                   ┌──────────────────────────────────────────────────────────────┐
                                                                                                                                                                                                                   │  0x401190                                                    │
                                                                                                                                                                                                                   │ ; [15] -r-x section size 997 named .text                     │
