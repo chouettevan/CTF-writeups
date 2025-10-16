@@ -1,3 +1,3 @@
 # Introduction
 
-This is a collecton of my CTF writeups.
+This is a collection of my CTF writeups.
