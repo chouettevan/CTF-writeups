@@ -4,6 +4,7 @@
 
 The challenge includes a [zip](https://github.com/chouettevan/CTF-writeups/blob/main/assets/united2025/pwn/src.zip) file containing a binary,as well as its libc and ld.so versions.
 
+
 ## 1 . Reverse engineering
 using radare2, we can see the main challenge binary has the follwing functions:
 ```
@@ -69,7 +70,7 @@ Carefully reading main reveals that it is possible to ovewrite a FILE struct:
 ```
 This code can be reached by selecting option number 1.
 There are,however, other parts of the code which are even more interesting:\\
-```
+```{style="max-height:150px;"}
                               │ ; [0x404040:1]=0                    │
                                        ││                                                                                 │ movzx eax, byte [obj.is_premium]    │
                                        ││                                                                                 │ test al, al                         │
