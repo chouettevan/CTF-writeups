@@ -1,7 +1,7 @@
 # Mission Control Malfunction
 
 ## Reverse Engineering
-We are given a [binary](https://github.com/chouettevan/CTF-writeups/blob/main/assets/cu2025/pwn/re) alongside with its source code:
+We are given a [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/cu2025/pwn/re) alongside with its source code:
 ```c
 #include <stdio.h>
 #include <stdlib.h>

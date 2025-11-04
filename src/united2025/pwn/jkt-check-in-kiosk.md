@@ -2,7 +2,7 @@
 
 
 
-The challenge includes a [zip](https://github.com/chouettevan/CTF-writeups/blob/main/assets/united2025/pwn/src.zip) file containing a binary,as well as its libc and ld.so versions.
+The challenge includes a [zip](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/united2025/pwn/src.zip) file containing a binary,as well as its libc and ld.so versions.
 
 
 ## 1 . Reverse engineering

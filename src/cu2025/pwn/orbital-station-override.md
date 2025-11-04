@@ -1,7 +1,7 @@
 # Orbital Station override
 
 ## Reverse engineering
-In this challenge,we are given the following C source code, alongside with a [binary](https://github.com/chouettevan/CTF-writeups/blob/main/assets/cu2025/pwn/mine_challenge).
+In this challenge,we are given the following C source code, alongside with a [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/cu2025/pwn/mine_challenge).
 ```c
 #include <stdio.h>
 #include <string.h>
