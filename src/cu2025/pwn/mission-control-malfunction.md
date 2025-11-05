@@ -174,7 +174,7 @@ In order to bypass the 32 byte limit, I chose to break the
 shellcode into 2 stages: the first part loads the second one,
 which runs free from any size restrictions.
 
-stage 1 shellcode
+stage 1 shellcode:
 ```asssembly
 .intel_syntax noprefix
 nop
@@ -188,7 +188,7 @@ binsh:
 ```
 
 The two nops at the beginning ensure that the 7th byte of the
-shellcode is `0x00`, so that clearing it does'nt change anything.
+shellcode is `0x00`, so that clearing it doesn't change anything.
 
 The second stage just pops a shell
 
