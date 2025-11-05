@@ -8,3 +8,4 @@
     - [Orbital station Override](cu2025/pwn/orbital-station-override.md)
     - [Mission Control Malfunction](cu2025/pwn/mission-control-malfunction.md)
     - [Alpha 7 Format Override](cu2025/pwn/alpha_7_format_override.md)
+    - [Neural Pattern Analysis](cu2025/pwn/neural_pattern_analysis.md)
