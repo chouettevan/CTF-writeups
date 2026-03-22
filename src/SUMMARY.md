@@ -11,5 +11,5 @@
     - [Neural Pattern Analysis](cu2025/pwn/neural_pattern_analysis.md)
     - [Nexus Corp Override](cu2025/pwn/nexus_corp_override.md)
 - [CSGames 2026](csgames2026/README.md)
-  - [Reverse Engineering](csgames2026/re/README.md)
-    - [Filp Floppy 2](csgames2026/re/floppy2.md)
+  - [Reverse Engineering](csgames2026/rev/README.md)
+    - [Filp Floppy 2](csgames2026/rev/floppy2.md)
