@@ -10,3 +10,6 @@
     - [Alpha 7 Format Override](cu2025/pwn/alpha_7_format_override.md)
     - [Neural Pattern Analysis](cu2025/pwn/neural_pattern_analysis.md)
     - [Nexus Corp Override](cu2025/pwn/nexus_corp_override.md)
+- [CSGames 2026](csgames2026/README.md)
+  - [Reverse Engineering](csgames2026/re/README.md)
+    - [Filp Floppy 2](csgames2026/re/floppy2.md)
