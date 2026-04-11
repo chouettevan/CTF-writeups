@@ -13,3 +13,7 @@
 - [CSGames 2026](csgames2026/README.md)
   - [Reverse Engineering](csgames2026/rev/README.md)
     - [Filp Floppy 2](csgames2026/rev/floppy2.md)
+- [PolyPwn 2026](polypwn2026/README.md)
+  - [Pwn](polypwn2026/pwn/README.md)
+    - [Pod](polypwn2026/pwn/pod.md) 
+    - [Pmj](polypwn2026/pwn/pmj.md) 
