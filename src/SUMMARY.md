@@ -24,5 +24,5 @@
   - [Pwn](dci_summercamp2026/pwn/README.md)
     - [Hive Pattern](dci_summercamp2026/pwn/hive_pattern.md)
     - [Unsound Memories](dci_summercamp2026/pwn/unsound_memories.md)
-    - [Deeper Memories](dci_summercamp2026/pwn/deeper_memories.md)
+    - [Deeper Memories](dci_summercamp2026/pwn/unsound_memories.md)
     
