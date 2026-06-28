@@ -18,9 +18,6 @@
     - [Fic](polypwn2026/pwn/pod.md) 
     - [Up](polypwn2026/pwn/pmj.md) 
 - [DalCTF 2026](dalctf2026/README.md)
-  - [Reverse Engineering](dalctf2026/rev/README.md)
-    - [checker](dalctf2026/rev/checker.md)
   - [Pwn] (dalctf2026/pwn/README.md)
-    - [Slot Machine](dalctf2026/pwn/slot_machine.md)
-    - [Blackjack](dalctf2026/pwn/blackjack.md)
+    - [Blackjack](dalctf2026/pwn/slot_machine.md)
     
