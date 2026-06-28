@@ -19,10 +19,10 @@
     - [Up](polypwn2026/pwn/pmj.md) 
 - [DalCTF 2026](dalctf2026/README.md)
   - [Pwn](dalctf2026/pwn/README.md)
-    - [Blackjack](dalctf2026/pwn/slot_machine.md)
+    - [Blackjack](dalctf2026/pwn/blackjack.md)
 - [DCI Summer Camp CTF 2026](dci_summercamp2026/README.md)
   - [Pwn](dci_summercamp2026/pwn/README.md)
     - [Hive Pattern](dci_summercamp2026/pwn/hive_pattern.md)
     - [Unsound Memories](dci_summercamp2026/pwn/unsound_memories.md)
-    - [Deeper Memories](dci_summercamp2026/pwn/unsound_memories.md)
+    - [Deeper Memories](dci_summercamp2026/pwn/unsound_memoriesdeeper_memories.md)
     
