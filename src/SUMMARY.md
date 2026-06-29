@@ -25,4 +25,6 @@
     - [Hive Pattern](dci_summercamp2026/pwn/hive_pattern.md)
     - [Unsound Memories](dci_summercamp2026/pwn/unsound_memories.md)
     - [Deeper Memories](dci_summercamp2026/pwn/unsound_memoriesdeeper_memories.md)
+  - [Reverse Engineering](dci_summercamp2026/rev/README.md)
+    - [Des moustiques ou des abeilles ? — Firmware de la clôture](dci_summercamp2026/rev/cloture.md)
     
