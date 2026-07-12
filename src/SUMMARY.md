@@ -27,4 +27,6 @@
     - [Deeper Memories](dci_summercamp2026/pwn/unsound_memoriesdeeper_memories.md)
   - [Reverse Engineering](dci_summercamp2026/rev/README.md)
     - [Des moustiques ou des abeilles ? — Firmware de la clôture](dci_summercamp2026/rev/cloture.md)
-    
+- [BroncoCTF 2026]    
+   - [Reversing](bronco2026/rev/README.md)
+     - [Mirror Mirror](bronco2026/rev/mirror.md)
