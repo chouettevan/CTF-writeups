@@ -40,8 +40,8 @@ if __name__ == "__main__":
     print(verify(inp))
 ```
 
-This file creates the flag by using an xor between the bytes of its source code and some blob.
-we therefore cannot modify the file without editing the checksum, but we can do the following:
+This file creates the flag by using an xor between the bytes of the `sha256` hash of its source code and some blob,
+to prevent modifying it.howerver,we can copy the file and have the program read another location,like so:
 ```python
 # mirror.py
 import sys
