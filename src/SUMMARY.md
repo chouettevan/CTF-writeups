@@ -20,6 +20,7 @@
 - [DalCTF 2026](dalctf2026/README.md)
   - [Pwn](dalctf2026/pwn/README.md)
     - [Blackjack](dalctf2026/pwn/blackjack.md)
+    - [Password Vault](dalctf2026/pwn/vault.md)
 - [DCI Summer Camp CTF 2026](dci_summercamp2026/README.md)
   - [Pwn](dci_summercamp2026/pwn/README.md)
     - [Hive Pattern](dci_summercamp2026/pwn/hive_pattern.md)
