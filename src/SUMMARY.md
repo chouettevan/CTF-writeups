@@ -31,4 +31,6 @@
 - [BroncoCTF 2026](bronco2026/README.md)
    - [Reversing](bronco2026/rev/README.md)
      - [Mirror Mirror](bronco2026/rev/mirror.md)
+   - [Pwn](bronco2026/pwn/README.md)
+     - [Proper PWN](bronco2026/pwn/proper.md)
 
