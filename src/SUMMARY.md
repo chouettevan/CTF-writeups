@@ -33,4 +33,7 @@
      - [Mirror Mirror](bronco2026/rev/mirror.md)
    - [Pwn](bronco2026/pwn/README.md)
      - [Proper PWN](bronco2026/pwn/proper.md)
-
+- [HTB Cyber Apocalypse 2026](htb_cyber_apocalypse2026/README.md)
+   - [Pwn](htb_cyber_apocalypse2026/pwn/README.md)
+    - [Corroded Crown](htb_cyber_apocalypse2026/pwn/corroded_crown.md)
+    - [Heavy Is The Crown](htb_cyber_apocalypse2026/pwn/heavy_crown.md)
