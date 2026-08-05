@@ -2,7 +2,7 @@
 
 
 ## The challenge
-We receive a program named [floppy2](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/csgames2026/floppy2)
+We receive a program named [floppy2](assets/floppy2)
 by using `file` on the binary,we are able to see that it is a boot sector
 
 ```bash
