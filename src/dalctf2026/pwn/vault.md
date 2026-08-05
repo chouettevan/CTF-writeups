@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this challenge, we are given a [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/dalctf2026/vault).
+In this challenge, we are given a [binary](assets/vault).
 when running it the binary appears to be a heap challenge.
 ```fish
 [I] ◆ password_vault ❯❯❯ ./vault
