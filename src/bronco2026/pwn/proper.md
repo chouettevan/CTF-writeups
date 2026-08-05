@@ -1,6 +1,6 @@
 # Introduction
 
-In this challenge we are given a [zip file](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/bronco2026/proper.zip) containing
+In this challenge we are given a [zip file](assets/proper.zip) containing
 among others, a source file named `proper.c`:
 
 ```c
