@@ -1,7 +1,7 @@
 # Up
 
 ## Introduction
-We are given the following [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/polypwn2026/pmj).
+We are given the following [binary](assets/pmj).
 
 ## reversing
 When decompiling, we see the main function's code is as follows:

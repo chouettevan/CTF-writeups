@@ -1,7 +1,7 @@
 # Fic
 
 ## Introduction
-we are given a [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/polypwn2026/pod), which asks for a message and then repeats it:
+we are given a [binary](assets/pod), which asks for a message and then repeats it:
 
 ```fish
 [I] ◆ Downloads ❯❯❯ ./pod
