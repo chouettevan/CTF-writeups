@@ -1,7 +1,7 @@
 # Hive Pattern
 
 ## Introduction
-In this challenge we are given a [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/dci_summercamp2026/pod) without 
+In this challenge we are given a [binary](assets/pod) without 
 source code.
 
 ## Reverse engineering

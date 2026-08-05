@@ -1,7 +1,7 @@
 # Unsound Memories and Deeper memories
 
 ## Introduction
-The challenge includes a single [source code tarball](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/dci_summercamp2026/unsound-memories.zip)
+The challenge includes a single [source code tarball](assets/unsound-memories.zip)
 containing a rust project, to be exploited
 
 ## Analysis

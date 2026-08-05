@@ -1,7 +1,7 @@
 # Des moustiques ou des abeilles ? — Firmware de la clôture 
 
 ## Introduction
-In this challenge we are given an arm64 [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/dci_summercamp2026/cloture):
+In this challenge we are given an arm64 [binary](assets/cloture):
 ```fish
 [I] ✖ 255 DCI_Summer_CAMP ❯❯❯ file cloture
 cloture: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=a0ca08e9ecbc351e85a0480b981ca8661b064c99, for GNU/Linux 3.7.0, not stripped
