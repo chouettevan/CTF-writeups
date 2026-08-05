@@ -1,5 +1,5 @@
 ## Introduction
-In this challenge we are given a [zip archive]() that contains the binary, libc and ld.so. This is an excellent first heap challenge.
+In this challenge we are given a [zip archive](assets/corroded_crown.zip) that contains the binary, libc and ld.so. This is an excellent first heap challenge.
 
 ## Analysis
 A simple `angr decompile` on the binary reveals the following `main` function:
