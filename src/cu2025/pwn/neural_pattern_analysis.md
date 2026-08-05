@@ -1,6 +1,6 @@
 # Neural Pattern Analysis
 
-In this challenge,we are given the following source code,alongside a [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/cu2025/pwn/neural):
+In this challenge,we are given the following source code,alongside a [binary](assets/pwn/neural):
 ```c
 #include <stdio.h>
 #include <stdlib.h>

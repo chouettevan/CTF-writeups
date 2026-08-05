@@ -1,6 +1,6 @@
 # Nexus Corp Override
 
-In this challenge, we are given a [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/cu2025/pwn/overflow1) alongside with the following source code:
+In this challenge, we are given a [binary](assets/pwn/overflow1) alongside with the following source code:
 
 ```c
 #include <stdio.h>
