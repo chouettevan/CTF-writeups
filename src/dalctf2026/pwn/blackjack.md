@@ -1,8 +1,8 @@
 # BlackJack
 
 ## Introduction
-This challenge includes a [binary](../../assets/dalctf2026/blackjack) , 
-[source code](../../assets/dalctf2026/blackjack.c) , the [loader](../../assets/dalctf2026/ld-linux-x86-64.so.2) and [libc](../../assets/dalctf2026/libc.so.6) binaries.
+This challenge includes a [binary](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/dalctf2026/blackjack) , 
+[source code](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/dalctf2026/blackjack.c) , the [loader](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/dalctf2026/ld-linux-x86-64.so.2) and [libc](https://github.com/chouettevan/CTF-writeups/raw/refs/heads/main/assets/dalctf2026/libc.so.6) binaries.
 upon first look, it appears to be a simple blackjack game:
 ```fish
 [I] ◆ blackjack ❯❯❯ ./blackjack
